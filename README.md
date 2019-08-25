@@ -26,11 +26,12 @@ const smsJSON=JSON.stringify(body)
 module.exports=smsJSON
 //this is your response
     php.sms()
-
-    ```
+```
+    
 
 **SENDING AIRTIME**
 ===
+
 ```
 var phpsap=require('./phpsap')
 var body={
@@ -54,6 +55,7 @@ phpsap.airtime()
 
 **Mobile B2B**
 ===
+
 ```
 var php=require('./phpsap')
 var body={
