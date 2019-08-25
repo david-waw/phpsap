@@ -1,7 +1,7 @@
 # JAVA SCRIPT FOR PHP SAP-SMS,AIRTIME,PAYMENTS
 This is a Java script wrapper for the phpsap API that enables java script developers to easily integrate SMS,Airtime and Mobile payments using MPESA into their applications.It is very easy to get started by creating an account and grabbing an API Key.Upon creation of an account a SAP wallet is automatically created for you,you will have to top it up with cash to start using our API to send SMS and distribute airtime.For mobile payments using MPESA a payments wallet is also automatically created for you, this is where all payments made to your application will be collected and managed. Simply hit this link to get started [https://renthero.co.ke/phpsap](https://renthero.co.ke/phpsap)
 
-SENDING SMS
+**SENDING SMS**
 ===
 
 
@@ -27,7 +27,8 @@ module.exports=smsJSON
 //this is your response
     php.sms()`
 
-#SENDING AIRTIME  
+**SENDING AIRTIME**
+===
 var phpsap=require('./phpsap')
 var body={
     //these are the verification details and are both required
@@ -47,7 +48,8 @@ module.exports=airtimeJSON
 
 phpsap.airtime()
 
-#Mobile B2B
+**Mobile B2B**
+===
 var php=require('./phpsap')
 var body={
   //these are the verification details and are both required
@@ -67,7 +69,9 @@ const b2bJSON=JSON.stringify(body)
 module.exports=b2bJSON
 //this is your response
 php.b2b()
-#MOBILE B2C
+
+**MOBILE B2C**
+===
 var php=require('./phpsap')
 var body={
     //these are the verification details and are both required
@@ -87,7 +91,8 @@ module.exports=b2cJSON
 php.b2c()
 
 
-#MOBILE C2B VALIDATON
+**MOBILE C2B VALIDATON**
+===
 var php=require('./phpsap')
 var body={
     //these are the verification details and are both required
@@ -105,7 +110,9 @@ const c2bJSON=JSON.stringify(body)
 module.exports=c2bJSON
 //this is the response
 php.c2b()
-#MOBILE CHEKOUT-STK PUSH
+
+**MOBILE CHEKOUT-STK PUSH**
+===
 var php=require('./phpsap')
 var body={
       //these are the verification details and are both required
@@ -124,7 +131,10 @@ const checkoutJSON=JSON.stringify(body)
 module.exports=checkoutJSON
 //this is the output
 php.checkout()
-#PAYMENTS_WALLET_BALANCE
+
+**PAYMENTS_WALLET_BALANCE**
+===
+
 var php=require('./phpsap')
 var body={
     //these are the verification details and are both required
@@ -137,7 +147,10 @@ const paymentsbalJSON=JSON.stringify(body)
 module.exports=paymentsbalJSON
 //this is the output
 php.paymentsbal()
-#SAP_WALLET_BALANCE
+
+**SAP_WALLET_BALANCE**
+===
+
 var php=require('./phpsap')
 var body={
     //these are the verification details and are both required
@@ -151,7 +164,10 @@ const sapbalanceJSON=JSON.stringify(body)
 module.exports=sapbalanceJSON
 //this is the output
 php.sapbalance()
-#WALLET TRANSFER
+
+**WALLET TRANSFER**
+===
+```
 var php=require('./phpsap')
 var body={
     //these are the verification details and are both required
@@ -172,3 +188,4 @@ var body={
   module.exports=transferJSON
 //this is the output
 php.transfer()
+```
