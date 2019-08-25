@@ -1,6 +1,8 @@
 # JAVA SCRIPT FOR PHP SAP-SMS,AIRTIME,PAYMENTS
 This is a Java script wrapper for the phpsap API that enables java script developers to easily integrate SMS,Airtime and Mobile payments using MPESA into their applications.It is very easy to get started by creating an account and grabbing an API Key.Upon creation of an account a SAP wallet is automatically created for you,you will have to top it up with cash to start using our API to send SMS and distribute airtime.For mobile payments using MPESA a payments wallet is also automatically created for you, this is where all payments made to your application will be collected and managed. Simply hit this link to get started [https://renthero.co.ke/phpsap](https://renthero.co.ke/phpsap)
+
 #SENDING SMS
+
 `var php=require('./phpsap')
 var body={
     //these are the verification details and are both required
