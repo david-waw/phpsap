@@ -5,9 +5,9 @@ SENDING SMS
 ===
 
 
-   var php=require('./phpsap')
+    var php=require('./phpsap')
 
-   var body={
+    var body={
 
     //these are the verification details and are both required
 
