@@ -5,9 +5,9 @@ SENDING SMS
 ===
 
 
-`var php=require('./phpsap')
+   var php=require('./phpsap')
 
-var body={
+   var body={
 
     //these are the verification details and are both required
 
@@ -18,8 +18,8 @@ var body={
    //provide number in international formart(+254....) and message
 
    "Receiver":"provide your number",
-   
-	"Message":"provide message"
+
+	 "Message":"provide message"
 }
 //passing the details to a string
 const smsJSON=JSON.stringify(body)
