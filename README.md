@@ -4,7 +4,7 @@ This is a Java script wrapper for the phpsap API that enables java script develo
 **SENDING SMS**
 ===
 
-`
+```
     var php=require('./phpsap')
 
     var body={
@@ -27,11 +27,11 @@ module.exports=smsJSON
 //this is your response
     php.sms()
 
-    `
+    ```
 
 **SENDING AIRTIME**
 ===
-`
+```
 var phpsap=require('./phpsap')
 var body={
     //these are the verification details and are both required
@@ -50,7 +50,7 @@ module.exports=airtimeJSON
 
 
 phpsap.airtime()
-`
+```
 
 **Mobile B2B**
 ===
@@ -96,10 +96,11 @@ const b2cJSON=JSON.stringify(body)
 module.exports=b2cJSON
 //this is the output
 php.b2c()
-`
+```
 
 **MOBILE C2B VALIDATON**
 ===
+```
 var php=require('./phpsap')
 var body={
     //these are the verification details and are both required
@@ -117,9 +118,11 @@ const c2bJSON=JSON.stringify(body)
 module.exports=c2bJSON
 //this is the response
 php.c2b()
+```
 
 **MOBILE CHEKOUT-STK PUSH**
 ===
+```
 var php=require('./phpsap')
 var body={
       //these are the verification details and are both required
@@ -138,10 +141,10 @@ const checkoutJSON=JSON.stringify(body)
 module.exports=checkoutJSON
 //this is the output
 php.checkout()
-
+```
 **PAYMENTS_WALLET_BALANCE**
 ===
-
+```
 var php=require('./phpsap')
 var body={
     //these are the verification details and are both required
@@ -154,10 +157,10 @@ const paymentsbalJSON=JSON.stringify(body)
 module.exports=paymentsbalJSON
 //this is the output
 php.paymentsbal()
-
+```
 **SAP_WALLET_BALANCE**
 ===
-
+```
 var php=require('./phpsap')
 var body={
     //these are the verification details and are both required
@@ -171,7 +174,7 @@ const sapbalanceJSON=JSON.stringify(body)
 module.exports=sapbalanceJSON
 //this is the output
 php.sapbalance()
-
+```
 **WALLET TRANSFER**
 ===
 ```
